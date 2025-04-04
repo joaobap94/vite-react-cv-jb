@@ -1,86 +1,150 @@
-.body{
+body { 
+    margin: 0; 
+    padding-top: 70px; 
     font-family: "Simonetta";
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.p{
+    font-size: 16px;
+}
+
+.navbar-fixed-top { 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.container { 
+    width: 100%; 
+    max-width: 1170px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
 }
 
 .navbar-default {
-    background-color: black !important;
-    border-color: black !important;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: white !important;
-}
-.active{
-    background-color:transparent !important;
+    background-color: black;
+    border-color: black;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover {
     color: white !important;
     background-color: transparent !important;
 }
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-    color: white !important;
-    background-color: transparent;
-}
 
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus, 
+.navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav > li > a {
     color: white !important;
 }
 
-.navbar-default .navbar-brand {
-    color: white !important;
+.navbar-default .navbar-brand:focus, 
+.navbar-default .navbar-brand:hover {
+    background-color: transparent;
 }
-.navbar-default .navbar-brand {
-    color: white !important;
-}
+
 .clearfix:after {
-    content: " "; /* Older browser do not support empty content */
+    content: " ";
     visibility: hidden;
     display: block;
     height: 0;
     clear: both;
 }
-.container.sobre-mim, .imagem-sobre {
-    margin-top: 50px !important;
 
+.container.sobre-mim, 
+.imagem-sobre {
+    margin-top: 50px !important;
 }
-.sobre-mim{
-    font-size:30px;
+
+.container .exp-tbl p, .domino p{
+    font-size: 20px;
+}
+
+.nav.navbar-nav a {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4,
+.sobre-mim,
+.notas-titulo,
+.txt,
+.tech,
+.compt-desc,
+.resposta {
+    font-family: "Simonetta" !important;
+}
+
+h1, h2, h3, h4 {
+    font-size: 30px !important;
+}
+
+.sobre-mim {
+    font-size: 30px;
     text-align: left;
-    font-family:"Simonetta";
 }
-.flag{
+
+.txt {
+    font-size: 20px;
+    text-align: left;
+}
+
+.compt-desc {
+    font-size: 17px;
+}
+
+.tech {
+    font-size: 17px;
+    margin: 8px;
+}
+
+.resposta {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+/* Flag styles */
+.flag {
     float: right;
     margin-right: 20px;
     height: 20px;
-    width:50px;
+    width: 50px;
     margin-top: 14px;
 }
-.flag-en{
-    width:40px;
+
+.flag-en {
+    width: 40px;
 }
-h1,h2,h3,h4{
-    font-family:"Simonetta" !important;
-    font-size:30px !important;
+
+.flag img {
+    width: 50px;
+    height: 33px;
+    padding: 2px;
+    margin-top: 7px;
 }
-/*Take this off when bxslider used*/
-.slider-quemsou{
+
+/* Lists and slider */
+.slider-quemsou {
     list-style-type: none;
 }
-.txt{
-font-size:20px;
-text-align: left;
-font-family:"Simonetta";
+
+.exp-tbl li {
+    list-style-type: none;
 }
-.notas-titulo {
-    font-family: "Simonetta";
+
+/* Images */
+.imagem-sobre img {
+    height: 290px;
+    width: 290px;
 }
-.compt-desc {
-    font-family: "Simonetta";
-    font-size:17px;
-}
-.img-comp{
-    width:150px;
-    height:150px;
+
+.img-comp {
+    width: 150px;
+    height: 150px;
     z-index: 999;
     left: 33px;
     background: #FFF;
@@ -90,139 +154,98 @@ font-family:"Simonetta";
     -moz-border-radius: 100px;
     top: 0px;
     position: relative;
-    overflow:hidden;
-    text-align:left;
+    overflow: hidden;
+    text-align: left;
 }
 
-.exp-tbl li{
-    list-style-type: none;
-}
-
+/* Experience styles */
 .exp-col {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.exp-company{
-    font-weight:bold;
+.exp-company {
+    font-weight: bold;
 }
 
-
-.tech {
-    font-family: "Simonetta";
-    font-size: 17px;
-    margin:8px;
+#datatable-exp_wrapper{
+    font-family: "Arial";
 }
-#datatable-exp th{
+
+#datatable-exp th {
     padding: 10px !important;
 }
-.resposta{
-    font-family: "Simonetta";
-    font-size: 16px;
-    padding-left: 10px;
 
-}
-
+/* Contact section */
 .sec-contact {
     background-color: black;
-
     padding: 20px;
 }
 
-.circle{
+.circle {
     font-family: "Calibri";
     font-size: 20px;
-    color:white;
+    color: white;
 }
+
 .circles {
     width: 300px;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
 }
-.img-ctd{
-    float:left;
-    vertical-align:middle;
+
+.img-ctd {
+    float: left;
+    vertical-align: middle;
 }
-.row{
-    padding:5px;
+
+.row {
+    padding: 5px;
 }
+
 .sec-faq.container {
     padding: 20px;
 }
-.desc{
-    display:table-cell;
+
+.desc {
+    display: table-cell;
     vertical-align: middle;
-    height:50px;
-    padding-left:15px;
-}
-.bx-wrapper .bx-viewport {
-    box-shadow:none !important;
-}
-#filters {
-    padding-bottom: 10px;
-}
-.col-md-2.center{
-    float: left;
-    margin: 0 auto;
+    height: 50px;
+    padding-left: 15px;
 }
 
 .img-ctd2 {
     display: block;
     margin: 0 auto;
 }
-.desc2{
+
+.desc2 {
     text-align: center;
     padding: 7px;
 }
-.realizado2{
+
+.realizado2 {
     text-align: center;
 }
-.foot{
+
+.foot {
     width: 32%;
     margin: 0px auto;
 }
-.flag img {
-    width: 50px;
-    height: 33px;
-    padding: 2px;
-    margin-top: 7px;
-}
-.imagem-sobre img{
-    height:290px;
-    width:290px;
+
+/* Plugin styles */
+.bx-wrapper .bx-viewport {
+    box-shadow: none !important;
 }
 
-@media (min-width: 800px) and (max-width: 992px){
-    .flag, .flag-en{
-        position: absolute;
-        right: 20px;
-    }
+#filters {
+    padding-bottom: 10px;
 }
 
-@media (min-width: 767px) and (max-width: 820px){
-    ul.nav.navbar-nav a{
-        font-size: 12px;
-    }   
-}
-
-@media (max-width: 900px) {
-    .foot{
-        width: 100%;
-
-    }
-
-    .exp-tbl, .exp-col{
-        padding:0px !important;
-    }
-}
-@media (max-width:600px){
-    ul {
-        padding-left: 0px;
-    }
-    .exp-tbl, .exp-col{
-        padding:0px !important;
-    }
+.col-md-2.center {
+    float: left;
+    margin: 0 auto;
 }
 
 /* Certificate styles */
@@ -241,7 +264,7 @@ font-family:"Simonetta";
 
 .certificate-item p {
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .certificate-item img {
@@ -250,5 +273,39 @@ font-family:"Simonetta";
 
 .certificate-item img:hover {
     transform: scale(1.05);
+}
+
+/* Media queries */
+@media (min-width: 800px) and (max-width: 992px) {
+    .flag, .flag-en {
+        position: absolute;
+        right: 20px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 820px) {
+    ul.nav.navbar-nav a {
+        font-size: 12px;
+    }   
+}
+
+@media (max-width: 900px) {
+    .foot {
+        width: 100%;
+    }
+
+    .exp-tbl, .exp-col {
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    ul {
+        padding-left: 0px;
+    }
+    
+    .exp-tbl, .exp-col {
+        padding: 0px !important;
+    }
 }
 
