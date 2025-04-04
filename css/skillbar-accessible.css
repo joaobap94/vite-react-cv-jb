@@ -1,0 +1,59 @@
+/* Skillbar Accessibility Improvements */
+
+/* Improve contrast of text on colored backgrounds */
+.skillbar-title {
+    color: #ffffff; /* Ensure text is white for maximum contrast */
+    font-weight: bold; /* Keep text bold for better visibility */
+}
+
+/* Improve contrast for each category with WCAG AA compliant colors */
+/* Network related (was #2980b9) */
+.redes .skillbar-title,
+.redes .skillbar-bar {
+    background: #0056b3 !important; /* Darker blue for better contrast */
+}
+
+/* SQL/Database related (was #27ae60) */
+.sql .skillbar-title,
+.sql .skillbar-bar {
+    background: #084F29 !important; /* Darker green for better contrast */
+}
+
+/* Web related (was #46465e) */
+.web .skillbar-title,
+.web .skillbar-bar {
+    background: #2c2c44 !important; /* Darker slate for better contrast */
+}
+
+/* Multimedia related (was #333333) */
+.multimedia .skillbar-title,
+.multimedia .skillbar-bar {
+    background: #1a1a1a !important; /* Darker gray for better contrast */
+}
+
+/* Java related (was #d35400 for title, #e67e22 for bar) */
+.java .skillbar-title {
+    background: #5C3D00 !important; /* Darker orange for better contrast */
+}
+.java .skillbar-bar {
+    background: #5C3D00 !important; /* Consistent with title but still distinct */
+}
+
+/* Management related (was purple) */
+.gest .skillbar-title,
+.gest .skillbar-bar {
+    background: #6a0dad !important; /* More specific and accessible purple */
+}
+
+/* Microsoft related (was #2c3e50) */
+.microsoft .skillbar-title,
+.microsoft .skillbar-bar {
+    background: #1a2530 !important; /* Darker navy for better contrast */
+}
+
+/* Improve contrast for the percentage text */
+.skill-bar-percent {
+    color: #000000; /* Dark text for better contrast against light backgrounds */
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); /* Add shadow for better readability */
+} 
