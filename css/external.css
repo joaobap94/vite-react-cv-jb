@@ -275,6 +275,18 @@ h1, h2, h3, h4 {
     transform: scale(1.05);
 }
 
+/* Contact links styling */
+.desc2 a[href^="tel:"],
+.desc2 a[href^="mailto:"] {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.desc2 a[href^="tel:"]:hover,
+.desc2 a[href^="mailto:"]:hover {
+    text-decoration: underline;
+}
+
 /* Media queries */
 @media (min-width: 800px) and (max-width: 992px) {
     .flag, .flag-en {
