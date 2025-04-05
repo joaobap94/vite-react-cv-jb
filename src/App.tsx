@@ -13,9 +13,9 @@ function App() {
       <AppNavbar />
       <main>
         <AboutMe />
-        <Grades />
-        <Experience />
         <Certificates />
+        <Experience />
+        <Grades />
         <Contact />
       </main>
       <Footer />

@@ -18,10 +18,10 @@ const AppNavbar: React.FC = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#about">Sobre Mim</Nav.Link>
-            <Nav.Link href="#skills">Tecnologias</Nav.Link> 
-            <Nav.Link href="#projects">Projetos</Nav.Link> 
-            <Nav.Link href="#experience">Experiência</Nav.Link> 
             <Nav.Link href="#certificates">Certificados</Nav.Link>
+            <Nav.Link href="#experience">Tecnologias</Nav.Link> 
+            <Nav.Link href="#grades">Notas</Nav.Link> 
+            <Nav.Link href="#projects">Projetos</Nav.Link> 
             {/* <Nav.Link href="#faq">FAQ</Nav.Link> */}{/* Removed FAQ for now */ } 
           </Nav>
           {/* Language Toggle for larger screens */}

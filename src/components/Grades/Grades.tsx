@@ -1,5 +1,6 @@
-import React, { useState, useMemo } from 'react';
-import { Container, Button, ButtonGroup, Row, Col } from 'react-bootstrap';
+import React, { useState, useMemo, createRef } from 'react';
+import { Container, Button,  Row, Col } from 'react-bootstrap';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { gradesData, filterCategories, GradeEntry, FilterCategory } from '../../data/gradesData';
 import GradeBar from './GradeBar';
 import './Grades.scss';
@@ -14,15 +15,17 @@ const Grades: React.FC = () => {
     return gradesData.filter((grade: GradeEntry) => grade.category === activeFilter);
   }, [activeFilter]);
 
+  const transitionDuration = 300;
+
   return (
     <section id="grades" className="py-5">
       <Container>
-        <h2 className="text-center mb-4">Formação Acadêmica / Notas</h2>
-        <p className="text-center mb-4">
+        <h2 className="text-start mb-4">Formação Acadêmica / Notas</h2>
+        <p className="text-start mb-4">
           Do ano 2009 até 2012, desenvolvi os meus conhecimentos na área de programação, graças ao curso de Programação de Sistemas Informáticos, na Escola Dr. Ginestal Machado, com uma média de 17 valores.
           Do ano 2012 até 2015, na Escola Superior de Gestão e Tecnologia de Santarém, terminei a licenciatura em Informática com uma média de 15 valores.
         </p>
-        <p className="text-center mb-5"> Deixo em baixo algumas das cadeiras relevantes, praticadas nesta licenciatura, tal como as notas.</p>
+        <p className="text-start mb-5"> Deixo em baixo algumas das cadeiras relevantes, praticadas nesta licenciatura, tal como as notas.</p>
         
         <div className="d-flex flex-column flex-md-row justify-content-center align-items-center text-center mb-4">
           {filterCategories.map((category: FilterCategory) => (
@@ -37,18 +40,30 @@ const Grades: React.FC = () => {
           ))}
         </div>
 
-        <Row className="g-3">
-          {filteredGrades.map((grade: GradeEntry) => (
-            <Col key={grade.id} md={6}>
-              <GradeBar 
-                title={grade.title} 
-                percentage={grade.percentage} 
-                grade={grade.grade} 
-                category={grade.category} 
-              />
-            </Col>
-          ))}
-        </Row>
+        <TransitionGroup component={Row} className="g-3">
+          {filteredGrades.map((grade: GradeEntry) => {
+            const nodeRef = createRef<HTMLDivElement>();
+            return (
+              <CSSTransition
+                key={grade.id}
+                nodeRef={nodeRef}
+                timeout={transitionDuration}
+                classNames="fade"
+                mountOnEnter
+                unmountOnExit
+              >
+                <Col md={6} ref={nodeRef}>
+                  <GradeBar 
+                    title={grade.title} 
+                    percentage={grade.percentage} 
+                    grade={grade.grade} 
+                    category={grade.category} 
+                  />
+                </Col>
+              </CSSTransition>
+            );
+          })}
+        </TransitionGroup>
       </Container>
     </section>
   );

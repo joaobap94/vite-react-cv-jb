@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './GradeBar.scss';
 
 interface GradeBarProps {
@@ -20,10 +20,20 @@ const categoryColorMap: { [key: string]: string } = {
 };
 
 const GradeBar: React.FC<GradeBarProps> = ({ title, percentage, grade, category }) => {
+  const [currentWidth, setCurrentWidth] = useState<number>(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setCurrentWidth(percentage);
+    }, 10);
+
+    return () => clearTimeout(timer);
+  }, [percentage]);
+
   const backgroundColor = categoryColorMap[category] || categoryColorMap.default;
 
   const barStyle = {
-    width: `${percentage}%`,
+    width: `${currentWidth}%`,
     backgroundColor: backgroundColor,
   };
 
