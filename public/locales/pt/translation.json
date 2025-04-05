@@ -67,6 +67,39 @@
       "year_plural": "anos",
       "month": "mês",
       "month_plural": "meses"
+    },
+    "grades_filters": {
+      "all": "Todas",
+      "web": "Programação Web",
+      "java": "Java / Mobile",
+      "sql": "MySQL / PLSQL",
+      "multimedia": "Photoshop / Flash",
+      "microsoft": "C#, Azure, Web Services",
+      "redes": "Administração de Redes",
+      "gest": "Gestão"
+    },
+    "grades_subjects": {
+      "subject_1_title": "Arquitectura de Computadores e Sist. Operativos",
+      "subject_2_title": "Redes de Computadores",
+      "subject_3_title": "Bases de Dados I",
+      "subject_4_title": "Sistemas Web",
+      "subject_5_title": "Sistemas Multimédia",
+      "subject_6_title": "Fundamentos de Programação",
+      "subject_7_title": "Linguagens de Programação",
+      "subject_8_title": "Programação Orientada aos Objetos",
+      "subject_9_title": "Análise e Concepção de Sistemas de Informação",
+      "subject_10_title": "Integração de Sistemas I",
+      "subject_11_title": "Bases de Dados II",
+      "subject_12_title": "Serviços de Redes",
+      "subject_13_title": "Tecnologias da Internet",
+      "subject_14_title": "Aplicações Multimédia",
+      "subject_15_title": "Administração e Segurança de Sistemas e de Redes",
+      "subject_16_title": "Integração de Sistemas II",
+      "subject_17_title": "Sistemas de Informação para a Gestão",
+      "subject_18_title": "Desenvolvimento de Dispositivos Móveis",
+      "subject_19_title": "Aplicações de Código Aberto",
+      "subject_20_title": "Projeto Aplicado (Estágio)",
+      "subject_21_title": "Desenvolvimento de Aplicações na Internet"
     }
   }
   

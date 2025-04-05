@@ -67,6 +67,39 @@
       "year_plural": "years",
       "month": "month",
       "month_plural": "months"
+    },
+    "grades_filters": {
+      "all": "All",
+      "web": "Web Development",
+      "java": "Java / Mobile",
+      "sql": "MySQL / PLSQL",
+      "multimedia": "Photoshop / Flash",
+      "microsoft": "C#, Azure, Web Services",
+      "redes": "Network Administration",
+      "gest": "Management"
+    },
+    "grades_subjects": {
+      "subject_1_title": "Computer Architecture and Operating Systems",
+      "subject_2_title": "Computer Networks",
+      "subject_3_title": "Databases I",
+      "subject_4_title": "Web Systems",
+      "subject_5_title": "Multimedia Systems",
+      "subject_6_title": "Programming Fundamentals",
+      "subject_7_title": "Programming Languages",
+      "subject_8_title": "Object-Oriented Programming",
+      "subject_9_title": "Information Systems Analysis and Design",
+      "subject_10_title": "Systems Integration I",
+      "subject_11_title": "Databases II",
+      "subject_12_title": "Network Services",
+      "subject_13_title": "Internet Technologies",
+      "subject_14_title": "Multimedia Applications",
+      "subject_15_title": "Systems and Network Administration and Security",
+      "subject_16_title": "Systems Integration II",
+      "subject_17_title": "Information Systems for Management",
+      "subject_18_title": "Mobile Device Development",
+      "subject_19_title": "Open Source Applications",
+      "subject_20_title": "Applied Project (Internship)",
+      "subject_21_title": "Internet Application Development"
     }
   }
   
