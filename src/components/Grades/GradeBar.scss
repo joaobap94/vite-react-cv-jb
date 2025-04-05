@@ -57,13 +57,6 @@
     z-index: 3; 
 }
 
-.redes    { .gradebar-bar { background-color: $redes-color; } }
-.sql      { .gradebar-bar { background-color: $sql-color; } }
-.web      { .gradebar-bar { background-color: $web-color; } }
-.multimedia { .gradebar-bar { background-color: $multimedia-color; } }
-.java     { .gradebar-bar { background-color: $java-bar-color; } } 
-.gest     { .gradebar-bar { background-color: $gest-color; } }
-.microsoft{ .gradebar-bar { background-color: $microsoft-color; } }
 
 @media (max-width: 500px) {
     .gradebar-title {
