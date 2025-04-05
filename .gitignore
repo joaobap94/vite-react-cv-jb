@@ -7,7 +7,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+# Do NOT ignore package-lock.json
+# package-lock.json
+yarn.lock # Ignore yarn lock file if using npm
+
+# Build outputs
 dist
 dist-ssr
 *.local
@@ -21,4 +27,12 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.swp
+*~
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

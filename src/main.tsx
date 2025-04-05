@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
+import './styles/main.scss'; // Import main SCSS file
 // import './index.css' // Removed default CSS
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

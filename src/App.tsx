@@ -1,12 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar';
+import AboutMe from './components/AboutMe';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Certificates from './components/Certificates';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-      {/* Components will be placed here */}
+      <Navbar />
+      <main>
+        <AboutMe />
+        <Skills />
+        <Experience />
+        <Certificates />
+        <Contact />
+      </main>
+      <Footer />
     </>
   )
 }
