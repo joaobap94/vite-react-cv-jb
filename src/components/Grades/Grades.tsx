@@ -24,19 +24,17 @@ const Grades: React.FC = () => {
         </p>
         <p className="text-center mb-5"> Deixo em baixo algumas das cadeiras relevantes, praticadas nesta licenciatura, tal como as notas.</p>
         
-        <div className="text-center mb-4">
-          <ButtonGroup aria-label="Filtrar por categoria">
-            {filterCategories.map((category: FilterCategory) => (
-              <Button
-                key={category.filter}
-                variant={activeFilter === category.filter ? 'primary' : 'secondary'}
-                className={`${category.colorClass || ''} me-1`}
-                onClick={() => setActiveFilter(category.filter)}
-              >
-                {category.name}
-              </Button>
-            ))}
-          </ButtonGroup>
+        <div className="d-flex flex-column flex-md-row justify-content-center align-items-center text-center mb-4">
+          {filterCategories.map((category: FilterCategory) => (
+            <Button
+              key={category.filter}
+              variant={activeFilter === category.filter ? 'primary' : 'secondary'}
+              className={`${category.colorClass || ''} mb-1 mb-md-0 me-md-1 filter-button`}
+              onClick={() => setActiveFilter(category.filter)}
+            >
+              {category.name}
+            </Button>
+          ))}
         </div>
 
         <Row className="g-3">
