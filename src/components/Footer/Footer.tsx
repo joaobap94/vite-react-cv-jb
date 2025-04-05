@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
               &copy; {currentYear} João Batista. Todos os direitos reservados.
               <br />
               Este portfólio foi construído com React.
-              <Nav.Link href="/old-project/index.html" target="_blank">Clicar aqui para portfólio legacy de 2016</Nav.Link>
+              <Nav.Link href="vite-react-cv-jb/old-project/index.html" target="_blank">Clicar aqui para portfólio legacy de 2016</Nav.Link>
             </small>
           </Col>
         </Row>

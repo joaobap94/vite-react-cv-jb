@@ -1,5 +1,5 @@
 // Import variables
-@import '../../styles/variables'; 
+@use '../../styles/variables' as *; 
 
 .web-color { background-color: $web-color !important; border-color: $web-color !important; }
 .java-color { background-color: $java-title-color !important; border-color: $java-title-color !important; }
