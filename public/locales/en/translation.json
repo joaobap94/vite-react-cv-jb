@@ -24,9 +24,8 @@
       "linkedin": "LinkedIn"
     },
     "certificates_section": {
-      "title": "Certificates & Projects",
-      "subtitle": "Microsoft certified in several areas.",
-      "github_button": "GitHub"
+      "title": "Certificates",
+      "subtitle": "Microsoft certified in several areas."
     },
     "footer": {
       "contact_title": "Contact",
