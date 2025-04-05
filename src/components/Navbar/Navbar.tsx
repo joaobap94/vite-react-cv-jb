@@ -1,31 +1,45 @@
 import React from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 const AppNavbar: React.FC = () => {
+  const { t, i18n } = useTranslation();
+
   const handleLanguageToggle = () => {
-    console.log('Language toggle clicked');
+    const newLang = i18n.language === 'pt' ? 'en' : 'pt';
+    i18n.changeLanguage(newLang);
   };
 
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top" collapseOnSelect>
       <Container>
-        <Navbar.Brand href="#about">O Meu Portfólio</Navbar.Brand>
-        {/* perhaps swap this to i18n later */}
-        <Button variant="outline-light" size="sm" onClick={handleLanguageToggle} className="ms-auto me-2 d-lg-none">
-           EN 
+        <Navbar.Brand href="#about">{t('navbar.brand')}</Navbar.Brand>
+        <Button 
+          variant="outline-light" 
+          size="sm" 
+          onClick={handleLanguageToggle} 
+          className="ms-auto me-2 d-lg-none"
+          aria-label={`Switch to ${i18n.language === 'pt' ? 'English' : 'Portuguese'}`}
+        >
+           {t('navbar.toggle_lang')}
         </Button>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#about">Sobre Mim</Nav.Link>
-            <Nav.Link href="#certificates">Certificados</Nav.Link>
-            <Nav.Link href="#experience">Tecnologias</Nav.Link> 
-            <Nav.Link href="#grades">Notas</Nav.Link> 
-            {/* <Nav.Link href="#faq">FAQ</Nav.Link> */}{/* Removed FAQ for now */ } 
+            <Nav.Link href="#about">{t('navbar.about')}</Nav.Link>
+            <Nav.Link href="#certificates">{t('navbar.certificates')}</Nav.Link>
+            <Nav.Link href="#experience">{t('navbar.experience')}</Nav.Link> 
+            <Nav.Link href="#grades">{t('navbar.grades')}</Nav.Link>
+            <Nav.Link href="#contact">{t('navbar.contact')}</Nav.Link>
           </Nav>
-          {/* Language Toggle for larger screens */}
-          <Button variant="outline-light" size="sm" onClick={handleLanguageToggle} className="d-none d-lg-inline-block">
-             EN 
+          <Button 
+            variant="outline-light" 
+            size="sm" 
+            onClick={handleLanguageToggle} 
+            className="d-none d-lg-inline-block"
+            aria-label={`Switch to ${i18n.language === 'pt' ? 'English' : 'Portuguese'}`}
+          >
+             {t('navbar.toggle_lang')}
           </Button>
         </Navbar.Collapse>
       </Container>

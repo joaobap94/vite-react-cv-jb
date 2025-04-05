@@ -1,0 +1,38 @@
+{
+    "navbar": {
+      "brand": "O Meu Portfólio",
+      "about": "Sobre Mim",
+      "grades": "Notas",
+      "experience": "Experiência",
+      "certificates": "Certificados",
+      "contact": "Contato",
+      "toggle_lang": "EN"
+    },
+    "about_me": {
+      "title": "Sobre mim",
+      "text": "Chamo-me João Batista, sou de Santarém e nasci em Julho de 1994. Comecei a estudar Informática na Escola Dr. Ginestal Machado, onde frequentei o curso de Programação de Sistemas Informáticos. Depois deste, licenciei-me em Informática, na Escola Superior de Gestão e Tecnologia de Santarém, com 21 anos."
+    },
+    "grades": {
+      "title": "Formação Acadêmica / Notas",
+      "intro1": "Do ano 2009 até 2012, desenvolvi os meus conhecimentos na área de programação, graças ao curso de Programação de Sistemas Informáticos, na Escola Dr. Ginestal Machado, com uma média de 17 valores.",
+      "intro2": "Do ano 2012 até 2015, na Escola Superior de Gestão e Tecnologia de Santarém, terminei a licenciatura em Informática com uma média de 15 valores.",
+      "intro3": "Deixo em baixo algumas das cadeiras relevantes, praticadas nesta licenciatura, tal como as notas."
+    },
+    "experience_section": {
+      "title": "Tecnologias que domino",
+      "linkedin_prompt": "Para informações detalhadas sobre a minha experiência profissional e projetos, adiciona o meu {{linkedinLink}} e solicite o meu CV.",
+      "linkedin": "LinkedIn"
+    },
+    "certificates_section": {
+      "title": "Certificados e Projetos",
+      "subtitle": "Microsoft certified em algumas áreas.",
+      "github_button": "GitHub"
+    },
+    "footer": {
+      "contact_title": "Contato",
+      "social_title": "Redes Sociais",
+      "copyright": "© {{year}} João Batista. Todos os direitos reservados.",
+      "built_with": "Este portfólio foi construído com React & Vite."
+    }
+  }
+  

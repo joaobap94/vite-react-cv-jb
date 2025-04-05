@@ -1,0 +1,38 @@
+{
+    "navbar": {
+      "brand": "My Portfolio",
+      "about": "About Me",
+      "grades": "Grades",
+      "experience": "Experience",
+      "certificates": "Certificates",
+      "contact": "Contact",
+      "toggle_lang": "PT"
+    },
+    "about_me": {
+      "title": "About Me",
+      "text": "My name is João Batista, I'm from Santarém and I was born in July 1994. I started studying Computer Science at Dr. Ginestal Machado School, where I attended the Computer Systems Programming course. After that, I graduated in Computer Science at the School of Management and Technology of Santarém, at the age of 21."
+    },
+    "grades": {
+      "title": "Academic Background / Grades",
+      "intro1": "From 2009 to 2012, I developed my knowledge in the programming field through the Computer Systems Programming course at Dr. Ginestal Machado School, with an average grade of 17.",
+      "intro2": "From 2012 to 2015, at the School of Management and Technology of Santarém, I completed my degree in Computer Science with an average grade of 15.",
+      "intro3": "Below are some relevant subjects from this degree, along with the grades."
+    },
+    "experience_section": {
+      "title": "Technologies I Master",
+      "linkedin_prompt": "For detailed information about my professional experience and projects, add me on {{linkedinLink}} and request my CV.",
+      "linkedin": "LinkedIn"
+    },
+    "certificates_section": {
+      "title": "Certificates & Projects",
+      "subtitle": "Microsoft certified in several areas.",
+      "github_button": "GitHub"
+    },
+    "footer": {
+      "contact_title": "Contact",
+      "social_title": "Social Networks",
+      "copyright": "© {{year}} João Batista. All rights reserved.",
+      "built_with": "This portfolio was built with React & Vite."
+    }
+  }
+  
