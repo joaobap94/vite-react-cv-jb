@@ -47,7 +47,6 @@ const Experience: React.FC = () => {
             columnDefs: [
               { targets: 2, type: 'num' }
             ],
-            responsive: true,
             paging: true,
             lengthChange: false,
             pageLength: 10,
