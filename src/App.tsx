@@ -4,7 +4,6 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Grades from './components/Grades/Grades';
 import Experience from './components/Experience/Experience';
 import Certificates from './components/Certificates/Certificates';
-import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
         <Certificates />
         <Experience />
         <Grades />
-        <Contact />
       </main>
       <Footer />
     </>

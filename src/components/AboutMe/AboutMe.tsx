@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-
+import './AboutMe.scss';
 const AboutMe: React.FC = () => {
   return (
-    <section id="about" className="my-5">
+    <section id="about" className="my-5-adjust">
       <Container>
         <Row className="align-items-center">
           <Col md={6} className="text-start">

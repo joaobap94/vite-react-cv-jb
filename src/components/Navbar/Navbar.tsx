@@ -21,7 +21,6 @@ const AppNavbar: React.FC = () => {
             <Nav.Link href="#certificates">Certificados</Nav.Link>
             <Nav.Link href="#experience">Tecnologias</Nav.Link> 
             <Nav.Link href="#grades">Notas</Nav.Link> 
-            <Nav.Link href="#projects">Projetos</Nav.Link> 
             {/* <Nav.Link href="#faq">FAQ</Nav.Link> */}{/* Removed FAQ for now */ } 
           </Nav>
           {/* Language Toggle for larger screens */}

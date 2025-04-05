@@ -7,7 +7,7 @@ const Certificates: React.FC = () => {
   return (
     <section id="certificates" className="py-5">
       <Container>
-        <h2 className="text-start mb-4">Certificados e Projetos</h2>
+        <h2 className="text-start mb-4">Certificados</h2>
         <p className="text-start mb-5">Microsoft certified em algumas áreas</p>
         
         <Row xs={1} sm={2} md={3} lg={4} className="g-3 justify-content-center">
