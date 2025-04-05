@@ -1,25 +1,31 @@
 import React from 'react';
 import DataTable from 'datatables.net-react';
 import DT from 'datatables.net-bs5';
-import { experienceData } from '../../data/experienceData';
+import { experienceData, ExperienceEntry } from '../../data/experienceData';
 import { Container } from 'react-bootstrap';
 import 'datatables.net-bs5/css/dataTables.bootstrap5.min.css';
 import './Experience.scss';
 
 DataTable.use(DT);
 
-const columns = [
-  { 
-    title: 'Tecnologia', 
-    data: 'technology' 
+const experienceColumns = [
+  {
+    title: 'Tecnologia',
+    data: 'technology'
   },
-  { 
-    title: 'Tipo', 
-    data: 'type' 
+  {
+    title: 'Tipo',
+    data: 'type'
   },
-  { 
-    title: 'Tempo', 
-    data: 'time' 
+  {
+    title: 'Tempo',
+    data: 'time',
+    render: (data: string, type: string, row: ExperienceEntry) => {
+      if (type === 'sort') {
+        return row.sortValue;
+      }
+      return data;
+    }
   },
 ];
 
@@ -34,12 +40,18 @@ const Experience: React.FC = () => {
 
         <DataTable 
           data={experienceData} 
-          columns={columns} 
+          columns={experienceColumns} 
           className="display table table-striped table-bordered"
           options={{
-            paging: true, 
-            lengthChange: false, 
-            pageLength: 10, 
+            columns: experienceColumns,
+            columnDefs: [
+              { targets: 2, type: 'num' }
+            ],
+            responsive: true,
+            paging: true,
+            lengthChange: false,
+            pageLength: 10,
+            order: [[2, 'desc']],
             language: {
               search: "Pesquisar:",
               lengthMenu: "Mostrar _MENU_ entradas",
