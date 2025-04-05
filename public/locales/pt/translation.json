@@ -19,9 +19,8 @@
       "intro3": "Deixo em baixo algumas das cadeiras relevantes, praticadas nesta licenciatura, tal como as notas."
     },
     "experience_section": {
-      "title": "Tecnologias que domino",
-      "linkedin_prompt": "Para informações detalhadas sobre a minha experiência profissional e projetos, adiciona o meu {{linkedinLink}} e solicite o meu CV.",
-      "linkedin": "LinkedIn"
+      "title": "Tecnologias",
+      "linkedin": "Para informações detalhadas sobre a minha experiência profissional e projetos, adiciona o meu LinkedIn e solicite o meu CV."
     },
     "certificates_section": {
       "title": "Certificados",
@@ -32,6 +31,42 @@
       "social_title": "Redes Sociais",
       "copyright": "© {{year}} João Batista. Todos os direitos reservados.",
       "built_with": "Este portfólio foi construído com React & Vite."
+    },
+    "datatable": {
+      "search": "Pesquisar:",
+      "lengthMenu": "Mostrar _MENU_ entradas",
+      "info": "Mostrando _START_ a _END_ de _TOTAL_ entradas",
+      "infoEmpty": "Mostrando 0 a 0 de 0 entradas",
+      "infoFiltered": "(filtrado de _MAX_ entradas totais)",
+      "paginate": {
+        "first": "Primeiro",
+        "last": "Último",
+        "next": "Próximo",
+        "previous": "Anterior"
+      },
+      "zeroRecords": "Nenhum registo encontrado",
+      "emptyTable": "Não existem dados disponíveis na tabela"
+    },
+    "experience_table": {
+      "header_technology": "Tecnologia",
+      "header_type": "Tipo",
+      "header_time": "Tempo",
+      "type_development": "Desenvolvimento",
+      "type_version_control": "Controlo de versões",
+      "type_database": "Base de dados",
+      "type_os": "Sistema Operativo",
+      "type_methodologies": "Metodologias",
+      "type_reporting": "Reporting",
+      "type_web_server": "Servidor Web",
+      "type_cloud": "Cloud",
+      "type_architectures": "Arquiteturas",
+      "type_tools": "Ferramentas"
+    },
+    "time_units": {
+      "year": "ano",
+      "year_plural": "anos",
+      "month": "mês",
+      "month_plural": "meses"
     }
   }
   

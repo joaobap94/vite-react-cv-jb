@@ -19,9 +19,8 @@
       "intro3": "Below are some relevant subjects from this degree, along with the grades."
     },
     "experience_section": {
-      "title": "Technologies I Master",
-      "linkedin_prompt": "For detailed information about my professional experience and projects, add me on {{linkedinLink}} and request my CV.",
-      "linkedin": "LinkedIn"
+      "title": "Technologies",
+      "linkedin": "For detailed information about my professional experience and projects, add me on Linkedin and request my CV."
     },
     "certificates_section": {
       "title": "Certificates",
@@ -32,6 +31,42 @@
       "social_title": "Social Networks",
       "copyright": "© {{year}} João Batista. All rights reserved.",
       "built_with": "This portfolio was built with React & Vite."
+    },
+    "datatable": {
+      "search": "Search:",
+      "lengthMenu": "Show _MENU_ entries",
+      "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+      "infoEmpty": "Showing 0 to 0 of 0 entries",
+      "infoFiltered": "(filtered from _MAX_ total entries)",
+      "paginate": {
+        "first": "First",
+        "last": "Last",
+        "next": "Next",
+        "previous": "Previous"
+      },
+      "zeroRecords": "No matching records found",
+      "emptyTable": "No data available in table"
+    },
+    "experience_table": {
+      "header_technology": "Technology",
+      "header_type": "Type",
+      "header_time": "Time",
+      "type_development": "Development",
+      "type_version_control": "Version Control",
+      "type_database": "Database",
+      "type_os": "Operating System",
+      "type_methodologies": "Methodologies",
+      "type_reporting": "Reporting",
+      "type_web_server": "Web Server",
+      "type_cloud": "Cloud",
+      "type_architectures": "Architectures",
+      "type_tools": "Tools"
+    },
+    "time_units": {
+      "year": "year",
+      "year_plural": "years",
+      "month": "month",
+      "month_plural": "months"
     }
   }
   
