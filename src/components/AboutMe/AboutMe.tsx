@@ -14,7 +14,7 @@ const AboutMe: React.FC = () => {
           </Col>
           <Col md={6} className="text-center">
             <Image 
-              src="/img/mainfb.jpg" 
+              src="img/mainfb.jpg" 
               alt="João Batista" 
               roundedCircle
               fluid
