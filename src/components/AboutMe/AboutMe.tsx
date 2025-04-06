@@ -7,7 +7,7 @@ const AboutMe: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="my-5-adjust">
+    <section id="about" className="my-5">
       <Container>
         <Row className="align-items-center">
           <Col md={6}>
