@@ -3,7 +3,7 @@ import DataTable from 'datatables.net-react';
 import DT from 'datatables.net-bs5';
 import { experienceData, ExperienceEntry } from '../../data/experienceData';
 import { Container } from 'react-bootstrap';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import 'datatables.net-bs5/css/dataTables.bootstrap5.min.css';
 import './Experience.scss';
 
