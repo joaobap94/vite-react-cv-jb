@@ -55,6 +55,11 @@
     line-height:35px;
     color: #6F0606; 
     z-index: 3; 
+
+    // Style for full grade (grade = 20)
+    &.full-grade {
+        color: #ffffff; // Set text color to white for full grade
+    }
 }
 
 

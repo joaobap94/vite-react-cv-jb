@@ -43,7 +43,9 @@ const GradeBar: React.FC<GradeBarProps> = ({ title, percentage, grade, category 
         <span>{title}</span>
       </div>
       <div className="gradebar-bar" style={barStyle}></div>
-      <div className="grade-bar-percent">{grade}</div>
+      <div className={`grade-bar-percent ${grade === 20 ? 'full-grade' : ''}`}>
+        {grade}
+      </div>
     </div>
   );
 };
