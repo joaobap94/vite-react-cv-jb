@@ -1,6 +1,7 @@
 import React from 'react';
 import DataTable from 'datatables.net-react';
 import DT from 'datatables.net-bs5';
+import 'datatables.net-responsive-bs5';
 import { experienceData, ExperienceEntry } from '../../data/experienceData';
 import { Container } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
@@ -29,7 +30,8 @@ const Experience: React.FC = () => {
   const experienceColumns = [
     {
       title: t('experience_table.header_technology'), 
-      data: 'technology'
+      data: 'technology',
+      responsivePriority: 1 
     },
     {
       title: t('experience_table.header_type'), 
@@ -37,7 +39,8 @@ const Experience: React.FC = () => {
       render: (data: string) => {
         const translationKey = typeTranslationMap[data] || '';
         return t(translationKey, { defaultValue: data });
-      }
+      },
+      responsivePriority: 3 
     },
     {
       title: t('experience_table.header_time'), 
@@ -69,7 +72,8 @@ const Experience: React.FC = () => {
             }
         }
         return data; // Fallback to original data if parsing fails
-      }
+      },
+      responsivePriority: 2 // Second priority
     },
   ];
 
@@ -106,8 +110,9 @@ const Experience: React.FC = () => {
             lengthChange: false,
             pageLength: 10,
             order: [[2, 'desc']],
-            language: dataTableLanguageOptions
-          }}
+            language: dataTableLanguageOptions,
+            responsive: true
+          } as any}
         >
           <thead>
             <tr>
