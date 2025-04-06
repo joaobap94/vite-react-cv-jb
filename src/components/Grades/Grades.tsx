@@ -27,14 +27,14 @@ const Grades: React.FC = () => {
         <p className="text-start mb-4">{t('grades.intro2')}</p>
         <p className="text-start mb-5">{t('grades.intro3')}</p>
         
-        <div className="d-flex flex-column flex-md-row justify-content-center align-items-center text-center mb-4">
+        <div className="d-flex flex-row flex-wrap justify-content-center text-center mb-4">
           {filterCategories.map((category: FilterCategory) => {
             const filterKey = `grades_filters.${category.filter === '*' ? 'all' : category.filter}`;
             return (
               <Button
                 key={category.filter}
                 variant={activeFilter === category.filter ? 'primary' : 'secondary'}
-                className={`${category.colorClass || ''} mb-1 mb-md-0 me-md-1 filter-button`}
+                className={`${category.colorClass || ''} mx-1 mb-2 filter-button`}
                 onClick={() => setActiveFilter(category.filter)}
               >
                 {t(filterKey, { defaultValue: category.name })}
