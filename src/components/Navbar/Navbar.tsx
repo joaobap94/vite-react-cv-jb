@@ -11,7 +11,7 @@ const AppNavbar: React.FC = () => {
   };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" collapseOnSelect>
+    <Navbar bg="dark" variant="dark" expand="lg" sticky="top" collapseOnSelect>
       <Container>
         <Navbar.Brand href="#about">{t('navbar.brand')}</Navbar.Brand>
         <Button 
