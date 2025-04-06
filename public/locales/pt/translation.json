@@ -30,7 +30,8 @@
       "contact_title": "Contato",
       "social_title": "Redes Sociais",
       "copyright": "© {{year}} João Batista. Todos os direitos reservados.",
-      "built_with": "Este portfólio foi construído com React & Vite."
+      "built_with": "Este portfólio foi construído com React & Vite.",
+      "legacy_link": "Clicar aqui para portfólio legacy de 2016"
     },
     "datatable": {
       "search": "Pesquisar:",

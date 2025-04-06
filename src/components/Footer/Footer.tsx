@@ -1,9 +1,11 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { EnvelopeFill, TelephoneFill, Linkedin, Github } from 'react-bootstrap-icons';
+import { useTranslation } from 'react-i18next';
 import './Footer.scss'; 
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -12,7 +14,7 @@ const Footer: React.FC = () => {
         <Row className="gy-3 align-items-center"> 
           {/* Column 1: Contact Info */}
           <Col md={6} lg={4} className="text-center text-md-start">
-            <h5>Contato</h5>
+            <h5>{t('footer.contact_title')}</h5>
             <Nav className="flex-column">
               <Nav.Link 
                 href="mailto:joao.batista.wk@gmail.com" 
@@ -30,7 +32,7 @@ const Footer: React.FC = () => {
           </Col>
 
           <Col md={6} lg={4} className="text-center">
-            <h5>Redes</h5>
+            <h5>{t('footer.social_title')}</h5>
             <Nav className="justify-content-center justify-content-md-center">
               <Nav.Link href="https://www.linkedin.com/in/jo%C3%A3o-batista-2a7002136" target="_blank" rel="noopener noreferrer" className="text-light p-1 fs-4">
                 <Linkedin />
@@ -43,10 +45,12 @@ const Footer: React.FC = () => {
 
           <Col lg={4} className="text-center text-lg-end">
             <small>
-              &copy; {currentYear} João Batista. Todos os direitos reservados.
+              {t('footer.copyright', { year: currentYear })}
               <br />
-              Este portfólio foi construído com React.
-              <Nav.Link href="/vite-react-cv-jb/old-project/index.html" target="_blank">Clicar aqui para portfólio legacy de 2016</Nav.Link>
+              {t('footer.built_with')}
+              <Nav.Link href="/vite-react-cv-jb/old-project/index.html" target="_blank">
+                {t('footer.legacy_link')}
+              </Nav.Link>
             </small>
           </Col>
         </Row>

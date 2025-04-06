@@ -30,7 +30,8 @@
       "contact_title": "Contact",
       "social_title": "Social Networks",
       "copyright": "© {{year}} João Batista. All rights reserved.",
-      "built_with": "This portfolio was built with React & Vite."
+      "built_with": "This portfolio was built with React & Vite.",
+      "legacy_link": "Click here for legacy 2016 portfolio"
     },
     "datatable": {
       "search": "Search:",
