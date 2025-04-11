@@ -15,12 +15,12 @@ const Certificates: React.FC = () => {
         
         <Row xs={1} sm={2} md={3} lg={4} className="g-3 justify-content-center">
           {certificateData.map((cert: Certificate) => (
-            <a 
+            <a  key={cert.id}
                 href={cert.href} 
                 target="_blank" 
                 rel="noopener noreferrer" 
             >
-              <Col key={cert.id} className="d-flex justify-content-center h-100 mb-3"> 
+              <Col className="d-flex justify-content-center h-100 mb-3"> 
                   <div className="certificate-item">
                       <img 
                         src={cert.imgSrc} 
